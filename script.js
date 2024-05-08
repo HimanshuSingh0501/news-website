@@ -6,7 +6,7 @@ const showmore_btn = document.querySelector(".showmore");
 let page_num = 1;
 let search_text = "";
 let search = false;
-// for searching wala part
+
 input.addEventListener("input", (event) => {
     event.preventDefault();
     search_text = event.target.value;
@@ -21,14 +21,13 @@ search_btn.addEventListener("click", () => {
     search = true;
     SearchPhotos(search_text, page_num);
 });
-/////////////////////
 function cleargallery() {
     document.querySelector(".display_images").innerHTML = "";
     page_num = 1;
 }
-//////////ftech data from API key
+
 async function CuratedPhotos(page_num) {
-    const data = await fetch(`https://newsapi.org/v2/top-headlines?country=in&page=${page_num}&pageSize=10&apiKey=d69fd79ca912474f974049523d33522d`, {
+    const data = await fetch(`https://newsapi.org/v2/top-headlines?country=in&page=${page_num}&pageSize=10&apiKey=a9d9e2eae3054d9c876151c9c7d3d821`, {
         method: "GET",
         headers: {
             Accept: "application/json",
@@ -105,7 +104,7 @@ const formattedCurrentDate = currentDate.toISOString().split('T')[0];
 const formattedOneWeekAgo = oneWeekAgo.toISOString().split('T')[0];
 
 async function SearchPhotos(query, page_num) {
-    const data = await fetch(`https://newsapi.org/v2/everything?q=${query}&from=${formattedOneWeekAgo}&to=${formattedCurrentDate}&page=${page_num}&apiKey=d69fd79ca912474f974049523d33522d`, {
+    const data = await fetch(`https://newsapi.org/v2/everything?q=${query}&from=${formattedOneWeekAgo}&to=${formattedCurrentDate}&page=${page_num}&apiKey=a9d9e2eae3054d9c876151c9c7d3d821`, {
         method: "GET",
         headers: {
             Accept: "application/json",
@@ -173,7 +172,7 @@ async function getCategoryNews(category, page_num) {
     const formattedCurrentDate = currentDate.toISOString().split('T')[0];
     const formattedOneWeekAgo = oneWeekAgo.toISOString().split('T')[0];
 
-    const apiUrl = `https://newsapi.org/v2/everything?q=${category}&from=${formattedOneWeekAgo}&to=${formattedCurrentDate}&page=${page_num}&apiKey=d69fd79ca912474f974049523d33522d`;
+    const apiUrl = `https://newsapi.org/v2/everything?q=${category}&from=${formattedOneWeekAgo}&to=${formattedCurrentDate}&page=${page_num}&apiKey=a9d9e2eae3054d9c876151c9c7d3d821`;
 
     try {
         const response = await fetch(apiUrl);
