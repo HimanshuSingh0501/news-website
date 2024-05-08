@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> News</title>
+        <!-- Font Awesome -->
+        <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        rel="stylesheet"
+        />
+        <!-- Google Fonts -->
+        <link
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+        rel="stylesheet"
+        />
+        <!-- MDB -->
+        <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css"
+        rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Toggle button -->
+      <button
+        data-mdb-collapse-init
+        class="navbar-toggler"
+        type="button"
+        data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+  
+<!-- Collapsible wrapper -->
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Navbar brand -->
+        <a class="navbar-brand mt-2 mt-lg-0" href="#">
+          <img
+            src="https://st2.depositphotos.com/6789684/12262/v/450/depositphotos_122620866-stock-illustration-illustration-of-flat-icon.jpg"
+            height="40"
+            alt="MDB Logo"
+            loading="lazy"
+          />
+        </a>
+       <!-- Left links navbar wale columns -->
+<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html" style="color: yellow;">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link category-link" href="#" data-category="business">Business</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link category-link" href="#" data-category="technology">Technology</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link category-link" href="#" data-category="sports">Sports</a>
+    </li>
+  </ul>
+  <!-- Left links -->
+  
+</div>
+      <!-- Collapsible wrapper search wala part -->
+  
+      <!-- Right elements -->
+      <div class="d-flex align-items-center">
+        <form action="#">
+            <div class="input-group">
+                <input id="navbar-form" type="search" class="input form-control" aria-label="Search" placeholder="Search News">
+                <div class="input-group-append">
+                   <button type="submit" aria-label="Search" class="search_btn input-group-text border-0" id="search-addon">
+                      <i class="fas fa-search"></i>
+                   </button>
+                </div>
+             </div>
+        </form>     
+    </div>
+    <!-- Right elements -->
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+
+<div class="container">
+    <div class="gallery display_images row row-cols-1 row-cols-md-3 g-4 mb-4">
+    </div>
+    <button class="showmore"></button>
+</div>
+        
+<script src="script.js"></script>
+ <!-- MDB -->
+ <script
+ type="text/javascript"
+ src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"
+ ></script>
+</body>
+<footer><section class="contact">
+    <div class="content">
+        <h2>Contact Us</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem numquam id reprehenderit, sunt laudantium enim possimus repellat debitis et quis!</p>
+    </div>
+    <div class="container">
+        <div class="contactInfo">
+            <div class="box">
+                <div class="icon"><ion-icon name="location-outline"></ion-icon></div>
+                <div class="text">
+                    <h3>Address</h3>
+                    <p>c-4| E,<br>Janakpuri Delhi,<br>110051</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon"><ion-icon name="call-outline"></ion-icon></div>
+                <div class="text">
+                    <h3>Phone</h3>
+                    <p>+91-9911440723</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon"><ion-icon name="mail-outline"></ion-icon></div>
+                <div class="text">
+                    <h3>Email</h3>
+                    <p>abcnews@temporary-mail</p>
+                </div>
+            </div>
+            <h2 class="txt">Connect with us</h2>
+            <ul class="sci">
+                <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            </ul>
+        </div>
+
+        <div class="contactForm">
+            <form>
+                <h2>Send Message</h2>
+                <div class="inputBox">
+                    <input type="text" name="" required="required">
+                    <span>Full Name</span>
+                </div>
+                <div class="inputBox">
+                    <input type="text" name="" required="required">
+                    <span>Email</span>
+                </div>
+                <div class="inputBox">
+                    <textarea required="required"></textarea>
+                    <span>Type your Message...</span>
+                </div>
+                <div class="inputBox">
+                    <input type="submit" value="Send">
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</footer>
+</html>
